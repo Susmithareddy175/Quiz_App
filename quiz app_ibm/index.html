@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovative Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Authentication -->
+  <div id="auth-container" class="card">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Enter username">
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="registerUser()">Register</button>
+    <button onclick="loginUser()">Login</button>
+    <p id="auth-msg"></p>
+  </div>
+
+  <!-- Role Selection -->
+  <div id="role-container" class="card hidden">
+    <h2>Select Your Role</h2>
+    <select id="role-select">
+      <option value="">-- Choose --</option>
+      <option value="student">Student</option>
+      <option value="college">College</option>
+      <option value="professional">Professional</option>
+    </select>
+    <button onclick="startRoleQuiz()">Start Quiz</button>
+  </div>
+
+  <!-- Quiz -->
+  <div id="quiz-container" class="card hidden">
+    <h2 id="quiz-title">Quiz</h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <p id="timer">Time left: <span id="time">10</span>s</p>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <!-- Results -->
+  <div id="result-container" class="card hidden">
+    <h2>Quiz Finished </h2>
+    <p id="score"></p>
+    <p id="badge"></p>
+    <button onclick="saveLeaderboard()">Save to Leaderboard</button>
+    <button onclick="showLeaderboard()">View Leaderboard</button>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+  <!-- Leaderboard -->
+  <div id="leaderboard-container" class="card hidden">
+    <h2>Leaderboard </h2>
+    <ol id="leaderboard-list"></ol>
+    <button onclick="restart()">Restart</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
