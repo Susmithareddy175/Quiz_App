@@ -26,18 +26,19 @@ function loginUser() {
 // ----------------- Quiz Data -----------------
 const quizData = {
   student: [
-    { q: "What is 2 + 2?", options: ["3", "4", "5"], ans: "4" },
-    { q: "Who is the father of Computers?", options: ["Charles Babbage", "Newton", "Einstein"], ans: "Charles Babbage" },
-    { q: "HTML stands for?", options: ["Hyper Trainer Markup", "HyperText Markup Language", "Home Tool Markup"], ans: "HyperText Markup Language" }
+    { q: "If the roots of the equation x^2 - 7x + 12 = 0 are α and β, then find the value of (α + 1)(β + 1)?", options: ["18", "19", "20"], ans: "20" },
+
+    { q: "The “Heart and Soul of the Constitution” (as described by B. R. Ambedkar) is:", options: ["Article 34", "Article 33", "Article 32"], ans: "Article 32" },
+    { q: "Who wrote the book Discovery of India?", options: ["Jawaharlal Nehru", "Sardar Patel", "B. R. Ambedkar"], ans: "Jawaharlal Nehru" }
   ],
   college: [
-    { q: "What does HR stand for?", options: ["Human Resource", "High Rank", "Hyper Reference"], ans: "Human Resource" },
-    { q: "Which is most common placement round?", options: ["Aptitude Test", "Cooking", "Music"], ans: "Aptitude Test" },
+    { q: "Who created the Python programming language?", options: ["Guido van Rossum", "James Gosling", "Bjarne Stroustrup"], ans: "Guido van Rossum" },
+    { q: "In the OSI model, which layer handles routing?", options: ["Network Layer", "Transport Layer", "Data Link Layer"], ans: "Network Layer" },
     { q: "LinkedIn is for?", options: ["Jobs & Networking", "Gaming", "Shopping"], ans: "Jobs & Networking" }
   ],
   professional: [
-    { q: "What is Agile?", options: ["Framework", "Dance", "Language"], ans: "Framework" },
-    { q: "Who manages a team?", options: ["Manager", "Intern", "Driver"], ans: "Manager" },
+    { q: "In Operating Systems, what problem does the Banker's Algorithm solve?", options: ["Deadlock detection", "Deadlock prevention", "Deadlock avoidance"], ans: "Deadlock avoidance" },
+    { q: "Which of the following data structures is used internally in Breadth First Search (BFS)?", options: ["Queue", "Stack", "Array"], ans: "Queue" },
     { q: "KPI means?", options: ["Key Performance Indicator", "Keep People Inside", "Known Project Issue"], ans: "Key Performance Indicator" }
   ]
 };
